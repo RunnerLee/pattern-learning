@@ -4,12 +4,21 @@
         {
             "name": "runnerlee",
             "email": "runnerleer@gmail.com"
+        },
+        {
+            "name": "janhuang",
+            "email": "bboyjanhuang@gmail.com"
         }
     ],
     "require": {
 
     },
-
+    "require-dev": {
+        "phpunit/phpunit": "5.0"
+    },
+    "config": {
+        "bin-dir": "./"
+    },
     "autoload": {
         "psr-4": {
             "Runnerlee\\": "src"
