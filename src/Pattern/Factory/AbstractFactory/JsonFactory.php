@@ -23,7 +23,7 @@ class JsonFactory extends AbstractFactory
 {
     /**
      * @param $content
-     * @return mixed
+     * @return MediaInterface
      */
     public function createText($content)
     {

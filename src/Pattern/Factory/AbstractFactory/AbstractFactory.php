@@ -23,7 +23,7 @@ abstract class AbstractFactory
 {
     /**
      * @param $content
-     * @return mixed
+     * @return MediaInterface
      */
     abstract public function createText($content);
 }

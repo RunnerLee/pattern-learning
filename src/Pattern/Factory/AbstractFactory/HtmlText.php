@@ -18,7 +18,7 @@ class HtmlText extends BaseMedia
 {
     public function render()
     {
-        header('content-type: text/html; charset=utf-8;');
+//        header('content-type: text/html; charset=utf-8;');
         return $this->content;
     }
 }

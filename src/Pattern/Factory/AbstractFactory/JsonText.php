@@ -26,7 +26,7 @@ class JsonText extends BaseMedia
      */
     public function render()
     {
-        header('content-type: application/json; charset=utf-8;');
+//        header('content-type: application/json; charset=utf-8;');
         return $this->content;
     }
 
