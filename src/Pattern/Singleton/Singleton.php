@@ -29,8 +29,7 @@ class Singleton
 
     public function __clone()
     {
-        echo 'fuck you';
-        exit;
+        throw new \Exception('fuck you');
     }
 
 

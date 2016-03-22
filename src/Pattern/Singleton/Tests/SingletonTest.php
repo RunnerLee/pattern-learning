@@ -13,7 +13,13 @@ class SingletonTest extends \PHPUnit_Framework_TestCase
 
     public function testSingleton()
     {
+        $obj = Singleton::getInstance();
 
+        try {
+            $demo = clone $obj;
+        }catch(\Exception $e) {
+            $this->assertEquals('fuck you', $e->getMessage());
+        }
     }
 
 }
