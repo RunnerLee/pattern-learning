@@ -1,9 +1,9 @@
 <?php
 /**
+ * Created by PhpStorm.
  * @author: RunnerLee
  * @email: runnerleer@gmail.com
- * @blog: http://www.runnerlee.com/
- * @time: 2016/3/6 23:33
+ * @time: 2016/3/21 0:48
  */
 
 namespace Runnerlee\Pattern\Builder;
@@ -11,20 +11,24 @@ namespace Runnerlee\Pattern\Builder;
 class Product
 {
 
-    protected $parts;
+    protected $config = [];
 
-    public function __construct()
+
+    public function __construct(array $config = [])
     {
-        $this->parts = [];
+        $this->config = $config;
     }
 
 
-    public function add($part) {
-        return array_push($this->parts, $part);
-    }
-
-    public function get()
+    public function push($config)
     {
-        return $this->parts;
+        return array_push($this->config, $config);
     }
+
+
+    public function pull()
+    {
+        return $this->config;
+    }
+
 }

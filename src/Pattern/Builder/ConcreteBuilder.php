@@ -1,9 +1,9 @@
 <?php
 /**
+ * Created by PhpStorm.
  * @author: RunnerLee
  * @email: runnerleer@gmail.com
- * @blog: http://www.runnerlee.com/
- * @time: 2016/3/7 23:17
+ * @time: 2016/3/21 0:46
  */
 
 namespace Runnerlee\Pattern\Builder;
@@ -13,22 +13,18 @@ class ConcreteBuilder extends AbstractBuilder
 
     protected $product;
 
+
     public function __construct()
     {
         $this->product = new Product();
     }
 
-    public function buildPartOne()
+    public function build()
     {
-        $this->product->add('one');
+        $this->product->push('good');
     }
 
-    public function buildPartTwo()
-    {
-        $this->product->add('two');
-    }
-
-    public function getResult()
+    public function get()
     {
         return $this->product;
     }

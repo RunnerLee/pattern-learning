@@ -1,9 +1,9 @@
 <?php
 /**
+ * Created by PhpStorm.
  * @author: RunnerLee
  * @email: runnerleer@gmail.com
- * @blog: http://www.runnerlee.com/
- * @time: 2016/3/7 23:19
+ * @time: 2016/3/21 0:54
  */
 
 namespace Runnerlee\Pattern\Builder;
@@ -11,10 +11,9 @@ namespace Runnerlee\Pattern\Builder;
 class Director
 {
 
-    public function __construct(AbstractBuilder $abstractBuilder)
+    public function __construct(AbstractBuilder $builder)
     {
-        $abstractBuilder->buildPartOne();
-        $abstractBuilder->buildPartTwo();
+        $builder->build();
     }
 
 }

@@ -1,9 +1,9 @@
 <?php
 /**
+ * Created by PhpStorm.
  * @author: RunnerLee
  * @email: runnerleer@gmail.com
- * @blog: http://www.runnerlee.com/
- * @time: 2016/3/6 23:39
+ * @time: 2016/3/18 0:14
  */
 
 namespace Runnerlee\Pattern\Builder;
@@ -11,12 +11,7 @@ namespace Runnerlee\Pattern\Builder;
 abstract class AbstractBuilder
 {
 
-    abstract public function buildPartOne();
+    abstract public function build();
 
-
-    abstract public function buildPartTwo();
-
-
-    abstract public function getResult();
-
+    abstract public function get();
 }

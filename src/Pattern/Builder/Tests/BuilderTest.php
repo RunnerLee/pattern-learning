@@ -1,24 +1,26 @@
 <?php
 /**
+ * Created by PhpStorm.
  * @author: RunnerLee
  * @email: runnerleer@gmail.com
- * @blog: http://www.runnerlee.com/
- * @time: 2016/3/7 23:25
+ * @time: 2016/3/21 0:56
  */
 
 namespace Runnerlee\Pattern\Builder;
 
+
 class BuilderTest extends \PHPUnit_Framework_TestCase
 {
+
 
     public function testBuilder()
     {
         $builder = new ConcreteBuilder();
         $director = new Director($builder);
 
-        $produect = $builder->getResult();
+        $product = $builder->get();
 
-        $this->assertEquals(['one', 'two'], $produect->get());
+        $this->assertEquals('good', $product->pull()[0]);
     }
 
 }
