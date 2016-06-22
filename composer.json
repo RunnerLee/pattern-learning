@@ -1,5 +1,5 @@
 {
-    "name": "runnerlee/pattern",
+    "name": "runner/pattern",
     "authors": [
         {
             "name": "runnerlee",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Runnerlee\\": "src"
+            "Runner\\": "src"
         }
     }
 }

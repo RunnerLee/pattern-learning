@@ -18,6 +18,6 @@ require __DIR__ . '/../vendor/autoload.php';
  * @adapter->xxx
  */
 
-$adapter = new \Runnerlee\Pattern\Adapter\Adapter();
+$refined = new \Runner\Pattern\Bridge\RefinedAbstraction(new \Runner\Pattern\Bridge\RoundMould(new \Runner\Pattern\Bridge\RedColor()));
 
-echo $adapter->setSocket(new \Runnerlee\Pattern\Adapter\Socket\JpSocket())->providePower();
+echo $refined->draw();

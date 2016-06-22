@@ -3,7 +3,7 @@
 
     <testsuites>
         <testsuite name="Pattern">
-            <directory suffix="Test.php">src/Pattern/Factory/AbstractFactory/Tests</directory>
+            <directory suffix="Test.php">src/Pattern/Bridge/Tests</directory>
         </testsuite>
     </testsuites>
     <filter>
